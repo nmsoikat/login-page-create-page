@@ -1,0 +1,82 @@
+@media (max-width: 992px) {
+  :root {
+    font-size: 9px;
+  }
+
+  .mb-md {
+    margin-bottom: 15px;
+  }
+
+  .common-form__header {
+    flex-direction: column;
+  }
+
+  .section-title {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+  }
+
+  .section-fields__input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .common-form__header .section-fields {
+    display: block;
+  }
+
+  .section-fields__input > input {
+    width: 60%;
+  }
+
+  .general-info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .upload-wrap {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 8px;
+  }
+
+  .section-title {
+    margin-bottom: 15px;
+    font-size: 2.8rem;
+  }
+
+  .section-fields__input > input {
+    width: 80%;
+  }
+
+  .input-wrap > label {
+    width: 170px;
+  }
+}
+
+@media (max-width: 576px) {
+  label {
+    font-weight: 700;
+  }
+
+  .section-fields__input > input {
+    width: 100%;
+  }
+
+  .input-wrap {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .input-wrap > select,
+  .input-wrap > input {
+    width: 100%;
+  }
+}

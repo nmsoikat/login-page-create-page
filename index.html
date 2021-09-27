@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content='index,follow' />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>web</title>
+
+  <!--
+    [if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]
+  -->
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/67b4130b51.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+
+</head>
+
+<body>
+
+  <!-- HEADER AREA -->
+  <header class="header-wrap" id="top">
+
+    <!-- MAIN MENU -->
+    <section class="main-menu-area">
+      <div class="container">
+        <nav class="main-menu-wrap">
+          <div class="left-part">
+            <a href="#" class="logo-wrap"><img src="/assets/img/logo.png" alt=""></a>
+            <a href="#" class="m-icon-wrap"><i class="fas fa-th"></i></a>
+            <a href="#" class="brand-text">HR & Payroll</a>
+          </div>
+
+          <div class="menu-wrap">
+            <!-- <button class="menu-toggler d-lg-none">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button> -->
+
+            <ul class="main-menu">
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Dashboard</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">HR </a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Attendance</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Payroll</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Report</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Setup</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right-part">
+            <a href="#" class="m-icon-wrap"><i class="fas fa-cog"></i></a>
+            <a href="#" class="m-icon-wrap"><i class="fas fa-bell"></i><label>0</label></a>
+            <a href="#" class="m-icon-wrap"><i class="fas fa-sign-out-alt"></i></a>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main>
+    <div class="container">
+      <section class="section-wrap">
+
+        <div class="employee-form common-form">
+          <form>
+            <div class="common-form__header">
+              <h3 class="section-title">Employee Form</h3>
+              <div class="section-fields">
+                <div class="section-fields__input">
+                  <label for="employeeID">Employee ID:</label>
+                  <input type="text" name="employeeID" id="employeeID">
+                </div>
+                <div class="section-fields__input">
+                  <label for="employeeID">Employee Name:</label>
+                  <input type="text" name="employeeName" id="employeeName">
+                </div>
+              </div>
+            </div>
+
+            <div class="common-form__body">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist" id="myTabs">
+                <li role="presentation" class="active">
+                  <a href="#general" aria-controls="home" role="tab" data-toggle="tab">General</a>
+                </li>
+                <li role="presentation">
+                  <a href="#organization" aria-controls="profile" role="tab" data-toggle="tab">Organization</a>
+                </li>
+                <li role="presentation">
+                  <a href="#education" aria-controls="messages" role="tab" data-toggle="tab">Education</a>
+                </li>
+                <li role="presentation">
+                  <a href="#familyNominee" aria-controls="settings" role="tab" data-toggle="tab">Family &
+                    Nominee</a>
+                </li>
+                <li role="presentation">
+                  <a href="#documents" aria-controls="settings" role="tab" data-toggle="tab">Documents</a>
+                </li>
+                <li role="presentation">
+                  <a href="#MISC" aria-controls="settings" role="tab" data-toggle="tab">MISC.</a>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="general">
+                  <div class="row general-info">
+                    <div class="col-md-8">
+                      <div class="input-wrap">
+                        <label for="idNumber" class="required">ID Number:</label>
+                        <input type="text" id="idNumber" required>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="fullName" class="required">Full Name:</label>
+                        <input type="text" id="fullName" required>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="banglaName">Bangla Name:</label>
+                        <input type="text" id="banglaName">
+                      </div>
+                      <div class="input-wrap">
+                        <label for="mobileOfficial">Mobile Official:</label>
+                        <input type="text" id="mobileOfficial">
+                      </div>
+                      <div class="input-wrap">
+                        <label for="workEmail">Work Email:</label>
+                        <input type="email" id="workEmail">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="upload-wrap">
+                        <div class="upload-ctrl">
+                          <label><input type="radio" name="profileUpload" checked>Upload</label>
+                          <label><input type="radio" name="profileUpload">Webcam</label>
+                        </div>
+                        <a href="#" class="upload-img"
+                          style="background-image: url('./assets/img/profile-avatar.png');"></a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="row space-top">
+                    <div class="col-sm-12">
+                      <p class="field-cat-name">Personal Details:</p>
+                    </div>
+
+                    <div class="col-md-6 mb-md">
+                      <div class="input-wrap">
+                        <label for="FaName" class="required">Father's Name:</label>
+                        <input type="text" id="FaName" required>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="gender" class="required">Gender:</label>
+                        <select name="gender" id="gender" required>
+                          <option value="">Select Gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="others">Others</option>
+                        </select>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="bloodGroup">Blood Group:</label>
+                        <select name="bloodGroup" id="bloodGroup">
+                          <option value="">Select Blood Group</option>
+                          <option value="">A+</option>
+                          <option value="">A-</option>
+                          <option value="">B+</option>
+                          <option value="">B-</option>
+                          <option value="">O+</option>
+                          <option value="">O-</option>
+                          <option value="">AB+</option>
+                          <option value="">AB-</option>
+                        </select>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="maritalStatus">Marital Status:</label>
+                        <select name="maritalStatus" id="maritalStatus">
+                          <option value="">Select Marital Status</option>
+                          <option value="">Married</option>
+                          <option value="">Single</option>
+                        </select>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="reserved">Reserved:</label>
+                        <input type="text" id="reserved" disabled>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="presonalPhone" class="required">Personal Phone:</label>
+                        <input type="text" id="presonalPhone" required>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="presentAddressEn" class="required">Present Address(En):</label>
+                        <input type="text" id="presentAddressEn" required>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="presentAddressBn">Present Address(Bn):</label>
+                        <input type="text" id="presentAddressBn">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="input-wrap">
+                        <label for="MoName" class="required">Mother's Name:</label>
+                        <input type="text" id="MoName" required>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="dateOB" class="required">Date Of Birth:</label>
+                        <input type="date" id="dateOB" required>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="religion" class="required">Religion:</label>
+                        <select name="religion" id="religion" required>
+                          <option value="">Select Religion</option>
+                          <option value="">Muslims</option>
+                          <option value="">Hindus</option>
+                          <option value="">Buddhists</option>
+                          <option value="">Christians</option>
+                        </select>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="E-TIN">E-TIN:</label>
+                        <input type="text" id="E-TIN">
+                      </div>
+                      <div class="input-wrap">
+                        <label for="BCNumber">Birth Certificate Number:</label>
+                        <input type="text" id="BCNumber">
+                      </div>
+                      <div class="input-wrap">
+                        <label for="personalEmail">Personal Email:</label>
+                        <input type="text" id="personalEmail">
+                      </div>
+                      <div class="input-wrap">
+                        <label for="permanentAddressEn" class="required">Permanent Address(En):</label>
+                        <input type="text" id="permanentAddressEn" required>
+                      </div>
+                      <div class="input-wrap">
+                        <label for="permanentAddressBn">Permanent Address(Bn):</label>
+                        <input type="text" id="permanentAddressBn">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="organization">Organization</div>
+                <div role="tabpanel" class="tab-pane fade" id="education">Education</div>
+                <div role="tabpanel" class="tab-pane fade" id="familyNominee">Family &
+                  Nominee</div>
+                <div role="tabpanel" class="tab-pane fade" id="documents">Documents</div>
+                <div role="tabpanel" class="tab-pane fade" id="MISC">MISC.</div>
+              </div>
+
+            </div>
+
+            <div class="common-form__footer">
+              <a href="#" class="cmn-form-btn"><i class="fas fa-save"></i>Save</a>
+              <a href="#" class="cmn-form-btn"><i class="fas fa-recycle"></i>Clear</a>
+              <a href="#" class="cmn-form-btn"><i class="fas fa-angle-double-left"></i></i>Back</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+  </script>
+
+  <script>
+    $('#myTabs a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+  </script>
+
+</body>
+
+</html>
